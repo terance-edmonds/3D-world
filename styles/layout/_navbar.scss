@@ -1,0 +1,16 @@
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    #nav_info{
+        position: fixed;
+        top: 40px;
+        right: 50px;
+        color: $black;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}

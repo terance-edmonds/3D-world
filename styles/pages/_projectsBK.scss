@@ -1,0 +1,78 @@
+#projects{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: $white;
+    perspective: 800px;
+    overflow: auto;
+
+    .projects_wrapper{
+        width: 100vw;
+        height: 100vh;
+        perspective: 800px;
+        overflow: hidden;
+
+        .project_wrapper{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 100vw;
+            height: 100vh;
+            perspective: 2000px;
+            align-items: center;
+            filter: blur(5px);
+
+            &[data-active="true"]{
+                filter: blur(0);
+            }
+
+            .project_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 350px;
+                height: 50vh;
+                border-radius: 5px;
+                padding: 20px;
+                transform: rotateY(30deg);
+                background: rgba(231, 231, 231, 0.1);
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+                filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.4));
+
+                .project_title{
+                    margin-bottom: 20px;
+                }
+
+                .project_dev_wrap{
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    font-size: 0.8rem;
+                }
+            }
+
+            &:nth-child(odd){
+                left: 0;
+                padding-left: 100px;
+            }
+
+            &:nth-child(even){
+                right: 0;
+                transform: translateZ(-400px) translateX(250px);
+                direction: rtl;
+                text-align: left;
+
+                .project_info{
+                    transform: rotateY(-30deg);
+                } 
+            }
+        }
+    }
+}

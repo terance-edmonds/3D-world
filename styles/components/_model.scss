@@ -1,0 +1,16 @@
+.model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .model_canvas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include vibrate-1(4s)
+}
