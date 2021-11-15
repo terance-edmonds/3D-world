@@ -1,6 +1,14 @@
-# Usage
+# 3D World with NextJS
 
-## Install packages (node_modules)
+## Packages
+
+ThreeJS - https://threejs.org/ \
+CannonJS - http://www.cannonjs.org/ \
+NextJs - https://nextjs.org/
+
+## Usage
+
+### Install packages (node_modules)
 
 > yarn install
 
@@ -8,7 +16,7 @@ or
 
 > npm install
 
-## Run
+### Run on localhost:3000
 
 > yarn dev 
 
