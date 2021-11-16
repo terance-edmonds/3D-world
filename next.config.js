@@ -1,5 +1,4 @@
 module.exports = {
   reactStrictMode: false,
-  assetPrefix: '/3D-world',
-  distDir: 'build',
+  assetPrefix: '/3D-world/'
 }
