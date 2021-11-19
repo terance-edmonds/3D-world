@@ -4,7 +4,8 @@ import '../styles/globals.scss';
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-       <Component {...pageProps} />
+      <title>3D World</title>
+      <Component {...pageProps} />
     </Layout>
   )
 }
