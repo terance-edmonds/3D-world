@@ -40,7 +40,7 @@ const Intro = ({text = "default", label, labelPosition, textPosition=[1, 0.7, 0]
                 <meshPhysicalMaterial color="#F5F5F5" />
               </mesh> : null
             }
-            <shapeBufferGeometry args={shape} />
+            <shapeBufferGeometry args={[shape]} />
             <meshPhysicalMaterial color="#F5F5F5" />
         </mesh>
     )

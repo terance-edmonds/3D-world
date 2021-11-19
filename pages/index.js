@@ -51,6 +51,7 @@ export default function Projects() {
               
               {/* <Debug color="black" scale={1.1}></Debug> */}
               <TheMan position={[0, 0, 25]} />
+
               <DirectionPole text="DIRECTION" position={[20, 2, 29]} offset={0.4} extend={1.3} />
               <DirectionPole text="DIRECTION" position={[0, 2, 45]} offset={0.4} extend={1.3} rotation={[0, 0, 0]} />
 
