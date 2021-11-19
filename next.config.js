@@ -1,3 +1,4 @@
 module.exports = {
-  reactStrictMode: false
+  reactStrictMode: false,
+  assetPrefix: '/3D-world/'
 }
